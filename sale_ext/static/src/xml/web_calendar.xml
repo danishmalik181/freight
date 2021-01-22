@@ -1,0 +1,9 @@
+<template>
+
+    <!--<t t-inherit="web.CalendarView.event.popover" t-inherit-mode="extension">
+        <xpath expr="//a[@class='btn btn-primary o_cw_popover_edit']" position="before">
+            <a t-if="widget.isEventEditable()" href="#" class="btn btn-primary o_cw_popover_edit">View</a>
+        </xpath>
+    </t>-->
+
+</template>

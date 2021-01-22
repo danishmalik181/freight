@@ -1,0 +1,91 @@
+
+input[type="checkbox"]{
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: white;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: white;
+    border: 2px solid black;
+    position: relative;
+}
+input[type="checkbox"]:checked {
+    background: white;
+    border: 1px solid black;
+}
+input[type="checkbox"]:checked:after {
+    /* Heres your symbol replacement - this is a tick in Unicode. */
+    content: "\2713";
+    color: black;
+    font-size: 30px;
+    /* The following positions my tick in the center, 
+     * but you could just overlay the entire box
+     * with a full after element with a background if you want to */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    /*
+     * If you want to fully change the check appearance, use the following:
+     * content: " ";
+     * width: 100%;
+     * height: 100%;
+     * background: blue;
+     * top: 0;
+     * left: 0;
+     */
+}
+
+input[type="radio"]{
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: white;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: white;
+    border: 2px solid black;
+    border-radius: 50%; 
+    position: relative;
+}
+input[type="radio"]:checked {
+    background: white;
+
+}
+input[type="radio"]:checked:after {
+    /* Heres your symbol replacement - this is a tick in Unicode. */
+    content: "\2713";
+    background-color: black !important; 
+    width:10px;
+    height: 10px;
+    border-radius: 50%;
+    color: black !important;
+    font-size: 10px;
+    /* The following positions my tick in the center, 
+     * but you could just overlay the entire box
+     * with a full after element with a background if you want to */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    /*
+     * If you want to fully change the check appearance, use the following:
+     * content: " ";
+     * width: 100%;
+     * height: 100%;
+     * background: blue;
+     * top: 0;
+     * left: 0;
+     */
+}
+
+
+
+

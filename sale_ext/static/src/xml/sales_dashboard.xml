@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template id="template" xml:space="preserve">
+  <t t-extend="SearchView">
+    <t t-jquery="div" t-operation="append">
+            <button>show</button>
+            <!-- <input></input> -->
+    </t>
+  </t>
+</template>
+
+
+
